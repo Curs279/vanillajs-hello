@@ -22,22 +22,14 @@ let generateExcuse = () => {
     "en el patio de la casa",
     "en la academia Tempo"
   ];
+  function generateRandomNumber(arr) {
+    return Math.floor(Math.random() * arr.length);
+  }
+  let proIndx = generateRandomNumber(pronoun);
+  let subjectIndex = generateRandomNumber(subject);
+  let actionIndex = generateRandomNumber(action);
+  let objectIndex = generateRandomNumber(object);
+  let whereIndex = generateRandomNumber(where);
 
-  let proIndx = Math.floor(Math.random() * pronoun.length);
-  let subjectIndex = Math.floor(Math.random() * subject.length);
-  let actionIndex = Math.floor(Math.random() * action.length);
-  let objectIndex = Math.floor(Math.random() * object.length);
-  let whereIndex = Math.floor(Math.random() * where.length);
-
-  return (
-    pronoun[proIndx] +
-    " " +
-    subject[subjectIndex] +
-    " " +
-    action[actionIndex] +
-    " " +
-    object[objectIndex] +
-    " " +
-    where[whereIndex]
-  );
+  return `${pronoun[proIndx]} ${subject[subjectIndex]} ${action[actionIndex]} ${object[objectIndex]} ${where[whereIndex]}`;
 };
