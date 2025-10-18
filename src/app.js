@@ -13,10 +13,10 @@ window.onload = () => {
 let generateExcuse = () => {
   let pronoun = ["Mi"];
   let subject = ["Hermano", "bebe", "perro", "padre", "hermana"];
-  let action = ["preparó", "cambió", "corrió hacia", "rompió"];
-  let object = ["el regalo", "el piso", "el baño", "la pelota", "la sorpresa"];
+  let action = ["preparó", "cambió", "perdió", "rompió"];
+  let object = ["el regalo", "el baño", "la pelota", "la sorpresa"];
   let where = [
-    "en el evento de revelación",
+    "en el piso de 10 de mi trabajo",
     "en el parque",
     "en el segundo piso",
     "en el patio de la casa",
